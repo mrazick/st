@@ -548,14 +548,14 @@ char wordDelimLarge[] = " \t"; /// <Word sepearors normal mode (capital W)
 /// Shortcusts executed in normal mode (which should not already be in use)
 /// [Vim Browse].
 struct NormalModeShortcuts normalModeShortcuts [] = {
-	{ 'R', "?Building\n" },
-	{ 'r', "/Building\n" },
-	{ 'F', "?: error:\n" },
-	{ 'f', "/: error:\n" },
-	{ 'Q', "?[Leaving vim, starting execution]\n" },
-	{ 'S', "Qf" },
-	{ 'X', "?juli@machine\n" },
-	{ 'x', "/juli@machine\n" },
+	// { 'R', "?Building\n" },
+	// { 'r', "/Building\n" },
+	// { 'F', "?: error:\n" },
+	// { 'f', "/: error:\n" },
+	// { 'Q', "?[Leaving vim, starting execution]\n" },
+	// { 'S', "Qf" },
+	// { 'X', "?juli@machine\n" },
+	// { 'x', "/juli@machine\n" },
 };
 
 size_t const amountNormalModeShortcuts = sizeof(normalModeShortcuts) / sizeof(*normalModeShortcuts);
