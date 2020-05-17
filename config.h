@@ -225,9 +225,9 @@ static MouseShortcut mshortcuts[] = {
 };
 
 // static pipe
-static char *openurlcmd[] = {
-    "/bin/sh", "-c", "xurls | rofi -dmenu -l 10 -w $WINDOWID | xargs -r open",
-    "externalpipe", NULL};
+// static char *openurlcmd[] = {
+//     "/bin/sh", "-c", "xurls | rofi -dmenu -l 10 -w $WINDOWID | xargs -r open",
+//     "externalpipe", NULL};
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
@@ -271,9 +271,9 @@ static Shortcut shortcuts[] = {
     {HYPEMOD, XK_L, zoomreset, {.f = 0}},
     {TERMMOD, XK_C, clipcopy, {.i = 0}},
     {TERMMOD, XK_V, clippaste, {.i = 0}},
-    {CTRLALT, XK_C, clipcopy, {.i = 0}},
-    {CTRLALT, XK_V, clippaste, {.i = 0}},
-    {MEHMOD, XK_p, selpaste, {.i = 0}},
+    {CTRLALT, XK_c, clipcopy, {.i = 0}},
+    {CTRLALT, XK_v, clippaste, {.i = 0}},
+    {HYPEMOD, XK_p, selpaste, {.i = 0}},
     {ShiftMask, XK_Insert, selpaste, {.i = 0}},
     {TERMMOD, XK_Num_Lock, numlock, {.i = 0}},
     {CTRLALT, XK_k, kscrollup, {.i = -1}},
