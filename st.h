@@ -68,6 +68,13 @@ typedef union {
 } Arg;
 
 
+typedef struct {
+	 uint b;
+	 uint mask;
+	 void (*func)(const Arg *);
+	 const Arg arg;
+} MouseKey;
+
 void die(const char *, ...);
 void redraw(void);
 void draw(void);
@@ -146,3 +153,4 @@ extern float alpha;
 extern float alphaUnfocused;
 extern char wordDelimSmall[];
 extern char wordDelimLarge[];
+extern MouseKey mkeys[];
