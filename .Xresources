@@ -1,29 +1,25 @@
+! Dracula Xresources palette
+*.foreground: #F8F8F2
+*.background: #282A36
+*.cursorColor: #F8F8F2
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
 
-! Colorsheme
-*color0: #3f3f3f
-*color1: #705050
-*color2: #60b48a
-*color3: #dfaf8f
-*color4: #506070
-*color5: #dc8cc3
-*color6: #8cd0d3
-*color7: #dcdccc
-*color8: #709080
-*color9: #dca3a3
-*color10: #c3bf9f
-!*color11: #f0dfaf
-
-! DARK BLUE
-! *color11: #010313
-! DARK GREEN
-!*color11: #020B08
-! DARK RED
-*color11: #110203
-
-*color12: #94bff3
-*color13: #ec93d3
-*color14: #93e0e3
-*color15: #ffffff
-
-st.alpha: 0.85
-st.alphaUnfocussed: 0.55
+st.alpha: 1.0
+!0.85
+st.alphaUnfocused: 1.0
+!0.55
