@@ -19,7 +19,13 @@
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
 
-st.alpha: 1.0
-!0.85
-st.alphaUnfocused: 1.0
-!0.55
+st.alpha: 0.85
+st.alphaUnfocused: 0.55
+
+
+dwm.normbordercolor: #282A36
+!dwm.normbgcolor
+!dwm.normfgcolor
+dwm.selbordercolor: #BD93F9
+!dwm.selbgcolor
+!dwm.selfgcolor

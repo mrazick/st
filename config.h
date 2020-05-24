@@ -240,7 +240,7 @@ MouseKey mkeys[] = {
 #define AltMask Mod1Mask
 #define SupMask Mod4Mask
 #define TERMMOD (ControlMask | ShiftMask)
-#define ALTMOD (AltMask | ShiftMask)
+#define ALTSHIFT (AltMask | ShiftMask)
 #define CTRLALT (ControlMask | AltMask)
 #define HYPEMOD (ControlMask | ShiftMask | AltMask | SupMask)
 #define MEHMOD (AltMask | ShiftMask | ControlMask)
@@ -261,25 +261,25 @@ static char *copyoutput[] = {"/bin/sh", "-c", "st-copyout", "externalpipe",
                              NULL};
 
 static Shortcut shortcuts[] = {
-    {HYPEMOD, XK_I, normalMode, {.i = 0}},
+    {ALTSHIFT, XK_I, normalMode, {.i = 0}},
     // external pipe
-    {TERMMOD, XK_u, externalpipe, {.v = openurlcmd}},
+    //{TERMMOD, XK_u, externalpipe, {.v = openurlcmd}},
     /* mask                 keysym          function        argument */
     {AltMask, XK_c, normalMode, {.i = 0}},
     // {XK_ANY_MOD, XK_Break, sendbreak, {.i = 0}},
     // {AltMask, XK_Print, toggleprinter, {.i = 0}},
     // {ShiftMask, XK_Print, printscreen, {.i = 0}},
     // {XK_ANY_MOD, XK_Print, printsel, {.i = 0}},
-    {HYPEMOD, XK_K, zoom, {.f = +1}},
-    {HYPEMOD, XK_J, zoom, {.f = -1}},
+    {ALTSHIFT, XK_K, zoom, {.f = +1}},
+    {ALTSHIFT, XK_J, zoom, {.f = -1}},
     //{ ControlMask,          XK_KP_Add,      zoom,           {.f = +1} },
     //{ ControlMask,          XK_KP_Subtract, zoom,           {.f = -1} },
-    {HYPEMOD, XK_L, zoomreset, {.f = 0}},
+    {ALTSHIFT, XK_L, zoomreset, {.f = 0}},
     {TERMMOD, XK_C, clipcopy, {.i = 0}},
     {TERMMOD, XK_V, clippaste, {.i = 0}},
     {CTRLALT, XK_c, clipcopy, {.i = 0}},
     {CTRLALT, XK_v, clippaste, {.i = 0}},
-    {HYPEMOD, XK_P, selpaste, {.i = 0}},
+    {ALTSHIFT, XK_P, selpaste, {.i = 0}},
     {ShiftMask, XK_Insert, selpaste, {.i = 0}},
     {TERMMOD, XK_Num_Lock, numlock, {.i = 0}},
     {CTRLALT, XK_k, kscrollup, {.i = -1}},
