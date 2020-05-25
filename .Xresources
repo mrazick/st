@@ -24,8 +24,9 @@ st.alphaUnfocused: 0.55
 
 
 dwm.normbordercolor: #282A36
-!dwm.normbgcolor
-!dwm.normfgcolor
+dwm.normbgcolor: #282A36
+dwm.normfgcolor: #BD93F9
 dwm.selbordercolor: #BD93F9
-!dwm.selbgcolor
-!dwm.selfgcolor
+dwm.selbgcolor: #BD93F9
+dwm.selfgcolor: #282A36
+
